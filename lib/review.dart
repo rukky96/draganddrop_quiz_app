@@ -34,8 +34,9 @@ class _ReviewPageState extends State<ReviewPage> {
             title: Text(
                 '${index + 1}. ${provider.questions[index]['question']!}',
                 style: const TextStyle(fontWeight: FontWeight.bold)),
-            subtitle: Row(
+            subtitle: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 RichText(
                     text: TextSpan(children: [
